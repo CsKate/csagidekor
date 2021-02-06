@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  background-color: #eee0da;
+  background-image: url("../images/pottyok.png");
+  background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav {
+  height: 70px;
+  background-color: #e5cbbf;
+  background-image: linear-gradient(#eee0da, #e5cbbf);
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-left {
+  width: 260px;
+}
+.menu-left a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.csagidekor {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 36px;
+  color: #322724;
+}
+
+.logo-ct {
+  padding-top: 2px;
+}
+
+.menu-right-ct {
+  display: flex;
+  align-items: center;
+}
+
+.menu-right-ct .menu {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-right-ct .menu li {
+  margin-top: 4px;
+  border-bottom: 4px solid transparent;
+  transition: border 1s;
+  cursor: pointer;
+}
+.menu-right-ct .menu li a {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 22px;
+  color: #322724;
+}
+.menu-right-ct .menu .underline {
+  border-bottom: 4px solid #7b5e5c;
+}
+.menu-right-ct .menu li:hover {
+  border-bottom: 4px solid #7b5e5c;
+}
+
+.section-basic {
+  width: 1200px;
+  padding: 20px 80px;
+  margin-left: calc((100% - 1200px) / 2);
+  background-color: #fbf8f6;
+}
+.section1 {
+  height: 1300px;
+}
+.section2 {
+  height: 800px;
+}
+.section3 {
+  height: 800px;
+}
+h2 {
+  font-size: 50px;
+  font-family: "Srisakdi", cursive;
+  color: #7b5e5c;
+  text-align: center;
+  padding: 80px 0 60px 0;
+  margin: 0;
+}
+
+.img-ct {
+  width: 236px;
+  height: 236px;
+  float: left;
+  margin: 12px;
+}
+.img-ct img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.img-ct:hover img {
+  opacity: 0.7;
+}
+.footer-splay {
+  transform: rotate(-3deg);
+  height: 68px;
+  background-color: #eee0da;
+  margin-top: -36px;
+}
+footer {
+  height: 560px;
+  background-color: #e5cbbf;
+  background-image: linear-gradient(#eee0da, #d1ac9c);
+  padding: 30px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.footer-csagidekor {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu {
+  margin-top: 40px;
+  display: flex;
+  width: 460px;
+  justify-content: space-between;
+}
+.footer-menu li a {
+  color: #322724;
+  border-bottom: 2px solid transparent;
+  transition: border 1s;
+  cursor: pointer;
+}
+.fade a {
+  color: #322724;
+  transition: color 0.3s;
+}
+.footer-menu .menu-li a:hover {
+  border-bottom: 2px solid #a6817e;
+}
+.fade a:hover {
+  color: #7e6c67;
+}
+.share {
+  margin-top: 50px;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+.share div {
+  width: 52px;
+  height: 52px;
+}
+.share div img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.share div img:hover {
+  opacity: 0.7;
+}
+.madeby {
+  margin: 50px 0 20px 0;
+  color: #322724;
+}
+.madeby-line {
+  margin: 8px 0;
+  position: relative;
+}
+.madeby-line div {
+  display: inline-block;
+  margin: 8px;
+  position: absolute;
+  top: -8px;
+}
+.madeby-line div a {
+  color: #322724;
+}
+.madeby-line img {
+  margin-right: 20px;
+}
+
+#globe {
+  margin-left: 2px;
+  margin-right: 22px;
+  margin-top: 2px;
+}
+
+.termsofuse-privacypolicy {
+  margin-top: 40px;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.separator {
+  width: 2px;
+  height: 18px;
+  background-color: #7e6c67;
+}
+
+.rights div,
+.rights img {
+  margin-top: 20px;
+  float: left;
+  font-size: 14px;
+}
+.rights img {
+  margin: 24px 8px 0 8px;
+}
+#pottyok2 {
+  position: absolute;
+  right: -2px;
+  bottom: -8px;
+}
+
+/*
+Bemutatkozás:
+*/
+.section-bemutatkozas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+
+  padding-bottom: 200px;
+}
+h3 {
+  font-size: 28px;
+  color: #7b5e5c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.bemutatkozas-ct {
+  margin-top: 80px;
+}
+.bemutatkozas {
+  width: 600px;
+  font-size: 20px;
+  color: #7b5e5c;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.profile-ct {
+  margin-top: 60px;
+  width: 280px;
+  border-radius: 100px;
+}
+.profile-ct img {
+  width: 100%;
+  border-radius: 146px / 210px;
+}
+
+/************     Kapcsolat       *********/
+
+.section-kapcsolat {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+  padding-bottom: 200px;
+}
+.info {
+  width: 600px;
+  font-size: 20px;
+
+  font-family: "Open Sans", sans-serif;
+  margin-top: 120px;
+}
+.info-line {
+  position: relative;
+  margin: 20px 0;
+  cursor: pointer;
+  color: #322724;
+}
+.info-line a {
+  color: #322724;
+}
+.info-line:hover a,
+.info-line:hover div {
+  color: #7e6c67;
+}
+.kapcsolat-img-ct {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.kapcsolat-img-ct img {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.info-line:hover .kapcsolat-img-ct img {
+  opacity: 0.7;
+}
+.phone-img-ct {
+  margin-left: -3px;
+  margin-right: 3px;
+}
+.info-data {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  margin-left: 28px;
+}
+.phone .info-data,
+.face .info-data {
+  top: 8px;
+}
+
+/*********        Provacy policy        ***************/
+.section-privacypolicy {
+  height: 800px;
+}
+.privacypolicy-description {
+  font-size: 20px;
+  color: #322724;
+}

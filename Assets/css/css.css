@@ -16,9 +16,10 @@ a:hover {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-nav {
+nav .basic-menu {
   height: 70px;
   background-color: #e5cbbf;
   background-image: linear-gradient(#eee0da, #e5cbbf);
@@ -50,6 +51,16 @@ nav {
   align-items: center;
 }
 
+.mobile-menu-img-ct {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.mobile-menu-img-ct img {
+  width: 100%;
+  height: 100%;
+}
 .menu-right-ct .menu {
   width: 420px;
   display: flex;
@@ -72,6 +83,58 @@ nav {
 }
 .menu-right-ct .menu li:hover {
   border-bottom: 4px solid #7b5e5c;
+}
+@keyframes rolldown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 150px;
+  }
+}
+@keyframes rollup {
+  from {
+    height: 150px;
+  }
+  to {
+    height: 0;
+  }
+}
+.mobile-menu {
+  display: none;
+  height: 150px;
+  animation-name: rolldown;
+  animation-duration: 0.6s;
+}
+.mobile-menu-up {
+  display: block;
+  height: 0;
+  animation-name: rollup;
+  animation-duration: 1s;
+}
+.mobile-menu-down {
+  display: block;
+  height: 150px;
+  animation-name: rolldown;
+  animation-duration: 1s;
+}
+.mobile-menu li {
+  width: 100%;
+  height: 33.3%;
+  background-color: #e5cbbf;
+  background-image: linear-gradient(#eee0da, #e5cbbf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu li a {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 22px;
+  color: #322724;
+}
+.blue {
+  background-color: blue;
+  color: blue;
 }
 
 .section-basic {
@@ -138,7 +201,7 @@ footer {
 .footer-menu {
   margin-top: 40px;
   display: flex;
-  width: 460px;
+  width: 100%;
   justify-content: space-between;
 }
 .footer-menu li a {
@@ -146,6 +209,9 @@ footer {
   border-bottom: 2px solid transparent;
   transition: border 1s;
   cursor: pointer;
+}
+.fade {
+  width: 80%;
 }
 .fade a {
   color: #322724;
@@ -332,4 +398,221 @@ h3 {
 .privacypolicy-description {
   font-size: 20px;
   color: #322724;
+}
+
+/***************       Reszponzivitás         ********/
+
+@media screen and (max-width: 1199px) {
+  body {
+    background-image: none;
+  }
+  .section-basic {
+    width: 100%;
+    margin: 0;
+  }
+
+  .section1 {
+    height: 1800px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .section2 {
+    height: 860px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .img-ct {
+    float: left;
+    margin-right: calc((100% - 708px) / 6);
+    margin-left: calc((100% - 708px) / 6);
+  }
+  .bemutatkozas {
+    width: 500px;
+  }
+  .info {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .section-basic {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .section1 {
+    height: 1790px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .section2 {
+    height: 800px;
+  }
+  .img-ct {
+    width: 236px;
+    height: 236px;
+    float: left;
+    margin-right: calc((100% - 708px) / 6);
+    margin-left: calc((100% - 708px) / 6);
+  }
+  #pottyok2 {
+    display: none;
+  }
+  .profile-ct {
+    width: 280px;
+  }
+  .bemutatkozas {
+    width: 460px;
+    font-size: 18px;
+  }
+  .info {
+    width: 460px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .menu-left {
+    width: 210px;
+  }
+  .menu-right-ct .menu {
+    display: none;
+  }
+
+  .mobile-menu-img-ct {
+    display: block;
+  }
+
+  .menu-left .csagidekor {
+    font-size: 30px;
+  }
+  .menu-left img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .menu-left a {
+    margin-top: 9px;
+  }
+  h2 {
+    font-size: 38px;
+    padding: 40px 0 20px 0;
+  }
+
+  .section1 {
+    height: 2800px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .section2 {
+    height: 1200px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .section3 {
+    height: 600px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .img-ct {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: calc((100% - 600px) / 4);
+    margin-right: calc((100% - 600px) / 4);
+  }
+  .profile-ct {
+    width: 200px;
+  }
+  .bemutatkozas {
+    width: 400px;
+    font-size: 16px;
+  }
+  .info {
+    width: 400px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  h2 {
+    font-size: 30px;
+  }
+  .section1 {
+    height: 5400px;
+  }
+  .section2 {
+    height: 2100px;
+  }
+  .section3 {
+    height: 930px;
+  }
+  .img-ct {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: calc((100% - 300px) / 2);
+    margin-right: calc((100% - 300px) / 2);
+  }
+  .section-bemutatkozas {
+    display: block;
+    height: 1200px;
+  }
+  .section-kapcsolat {
+    display: block;
+    height: 880px;
+  }
+  .profile-ct {
+    width: 300px;
+    margin-left: calc((100% - 300px) / 2);
+  }
+  h3 {
+    padding: 0 12px;
+  }
+  .bemutatkozas-ct {
+    margin-top: 20px;
+  }
+  .bemutatkozas {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 12px;
+  }
+  .kapcsolat-img-ct {
+    width: 30px;
+    height: 30px;
+  }
+  .kapcsolat-img-ct img {
+    width: 100%;
+    height: 100%;
+  }
+  .info {
+    width: 100%;
+    font-size: 14px;
+    padding: 0 12px;
+    margin-top: 40px;
+  }
+  .info-data {
+    margin-left: 18px;
+  }
+
+  footer {
+    height: 720px;
+  }
+  .footer-menu {
+    margin-top: 40px;
+    display: block;
+  }
+  .footer-menu li {
+    margin: 12px 0;
+  }
+  .separator {
+    display: none;
+  }
+  .termsofuse-privacypolicy {
+    margin-top: 40px;
+    width: 250px;
+    display: block;
+  }
+  .termsofuse-privacypolicy div {
+    margin: 12px 0;
+  }
 }

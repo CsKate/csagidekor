@@ -70,6 +70,7 @@ include "common/navbar.php";
 <?php
 include "common/footer.php";
 ?>
-
+<script src="../Scripts/script.js" >
+</script>
 </body>
 </html>

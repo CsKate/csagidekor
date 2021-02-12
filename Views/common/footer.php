@@ -28,6 +28,9 @@
       <div><a href="#" ><img src="/Assets/images/insta.png" alt="Instagramm" ></a></img></div>
       <div><a href="#" ><img src="/Assets/images/twitter.png" alt="Twitter" ></a></img></div>
     </div>    
+    <div class="admin fade" >
+      <a>Admin belépés</a>
+    </div>
     <div>
       <div class="madeby" >Készítette:</div>
       <div class="madeby-line">
@@ -44,9 +47,9 @@
       </div>
     </div>
     <div class="termsofuse-privacypolicy" >
-      <div class="fade" ><a href="/privacypolicy">Adatvédelmi szabályzat</a></div>
+      <div class="fade privacypolicy-ct" ><a href="/privacypolicy">Adatvédelmi szabályzat</a></div>
       <div class="separator"></div>
-      <div class="fade" ><a href="#">Felhasználói feltételek</a></div>
+      <div class="fade termsofuse-ct" ><a href="#">Felhasználói feltételek</a></div>
     </div>
     <div class="rights">
       <div>Minden jog fenntartva</div>

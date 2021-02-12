@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <meta name='robots' content='noindex,nofollow' />
   <link rel="icon" href="./Assets/images/logo.svg" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="/Assets/css/css.css" >
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,6 +19,17 @@
 <?php
 include "common/navbar.php";
 ?>
+
+<div class="big-picture-window" >
+  <div class="picture-header" >
+    <div class="close-ct" >
+      <img src= "../Assets/images/close.svg">
+    </div>
+  </div>
+  <div class="big-picture-ct" >
+    <img src="../Assets/images/dekor/diszlet/d1.png" alt="Kép">
+  </div>
+</div>
 
 <section class='section-basic section1' >
     <h2>Saját készítésű esküvői dekorációk</h2>
